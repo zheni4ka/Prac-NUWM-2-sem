@@ -10,6 +10,9 @@ private:
 public:
 	void PrintStudentTable();
 	void InitializeStudents();
+	void SaveToFile(const string& filename);
+	void LoadFromFile(const string& filename);
+	void printStudentsByBirthYear(int year);
 
 	int AvgMath();
 	int AvgIT();

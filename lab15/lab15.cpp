@@ -17,17 +17,9 @@ void Task1()
 	sm.InitializeStudents();
 
 	cout << endl << endl;
-
-	cout << "Student Table:" << endl;
-	sm.PrintStudentTable();
-
-	cout << endl << endl;
-
-	cout << "Average Math Grade: " << sm.AvgMath() << endl;
-	cout << "Average IT Grade: " << sm.AvgIT() << endl;
-	cout << "Average OS Grade: " << sm.AvgOS() << endl;
-	cout << "Average AG Grade: " << sm.AvgAG() << endl;
-	cout << endl << endl;
+    sm.SaveToFile("students.txt");
+	sm.LoadFromFile("students.txt");
+	sm.printStudentsByBirthYear(2006);
 }
 
 void Task2() 
@@ -118,5 +110,5 @@ void Task2()
 
 int main()
 {
-    Task2();
+    Task1();
 }
